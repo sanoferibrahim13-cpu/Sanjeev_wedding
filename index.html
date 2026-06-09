@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;Sanjeev's Road to Marriage Challenge&lt;/title&gt;</p>
+<p class="p1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1">&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>:root{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--gold:#d4a017; --marigold:#f4a300; --maroon:#7a1f2b; --maroon-deep:#5c151f;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--cream:#fdf6e8; --cream-2:#f7ecd4; --ink:#3a2418; --green:#2e7d4f; --muted:#9c8a6f;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>*{box-sizing:border-box;margin:0;padding:0}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>body{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family:'DM Sans',system-ui,sans-serif; color:var(--ink);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background:</p>
+<p class="p1"><span class="Apple-converted-space">      </span>radial-gradient(1200px 500px at 50% -10%, rgba(244,163,0,.18), transparent 60%),</p>
+<p class="p1"><span class="Apple-converted-space">      </span>linear-gradient(180deg,#fff8ec 0%, var(--cream) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>min-height:100vh; padding:28px 16px 60px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.wrap{max-width:1080px;margin:0 auto}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>header.hero{text-align:center;margin-bottom:22px;position:relative}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.garland{font-size:20px;letter-spacing:6px;color:var(--marigold);opacity:.9}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>h1{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family:'Fraunces',serif;font-weight:700;color:var(--maroon);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:clamp(28px,5vw,46px);line-height:1.05;margin:6px 0 4px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.sub{color:var(--muted);font-size:15px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.namebar{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display:flex;gap:10px;align-items:center;justify-content:center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>flex-wrap:wrap;margin:16px auto 4px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.namebar input{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family:'DM Sans';font-size:15px;padding:11px 14px;border-radius:12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border:1.5px solid var(--cream-2);background:#fff;min-width:240px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow:0 2px 0 rgba(122,31,43,.06);outline:none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.namebar input:focus{border-color:var(--marigold)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.namebar .who{font-size:13px;color:var(--muted)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.panel{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background:linear-gradient(180deg,#fff,#fffdf6);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border:1.5px solid var(--cream-2);border-radius:20px;padding:18px 18px 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow:0 14px 40px rgba(122,31,43,.08);margin:18px 0 22px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.scorerow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.stat{background:var(--cream);border-radius:14px;padding:12px;text-align:center;border:1px solid var(--cream-2)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.stat .n{font-family:'Fraunces';font-weight:700;font-size:26px;color:var(--maroon)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.stat .l{font-size:11.5px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin-top:2px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.meterhead{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.meterhead .v{font-family:'Fraunces';font-weight:700;color:var(--maroon);font-size:16px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.meterhead .lbl{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.meter{height:18px;background:var(--cream-2);border-radius:999px;overflow:hidden;position:relative}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.meter&gt;span{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display:block;height:100%;width:0;border-radius:999px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background:linear-gradient(90deg,var(--maroon),var(--marigold),var(--gold));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition:width .6s cubic-bezier(.2,.8,.2,1);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.resetbtn{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>float:right;margin-top:12px;font-family:'DM Sans';font-weight:600;font-size:12.5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:var(--maroon);background:transparent;border:1.5px solid var(--cream-2);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:7px 13px;border-radius:10px;cursor:pointer;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.resetbtn:hover{background:var(--cream)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background:#fff;border-radius:18px;padding:16px;border:1.5px solid var(--cream-2);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position:relative;display:flex;flex-direction:column;gap:10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow:0 8px 22px rgba(122,31,43,.06);transition:transform .15s, box-shadow .15s;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(122,31,43,.1)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card.locked{opacity:.62;background:repeating-linear-gradient(135deg,#fff,#fff 10px,#fffaf0 10px,#fffaf0 20px)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card.done{border-color:var(--green)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card.skipped{border-color:#c9777f}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.daytag{font-family:'Fraunces';font-weight:700;color:var(--marigold);font-size:13px;letter-spacing:.5px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.date{font-size:11.5px;color:var(--muted);margin-top:1px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.badge{font-size:11px;font-weight:700;padding:4px 9px;border-radius:999px;white-space:nowrap}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.badge.d{background:#e7f5ec;color:var(--green)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.badge.s{background:#fbe9eb;color:#a23440}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.badge.l{background:var(--cream-2);color:var(--muted)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.title{font-family:'Fraunces';font-weight:600;font-size:19px;color:var(--maroon);line-height:1.15}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.task{font-size:14px;color:var(--ink);line-height:1.45}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.carry{background:#fff4ec;border:1px dashed #e6b48a;border-radius:10px;padding:8px 10px;font-size:12.5px;color:#9c5a23}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.carry b{color:#7a3d12}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.actions{display:flex;gap:8px;margin-top:2px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.actions button{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>flex:1;font-family:'DM Sans';font-weight:700;font-size:13px;padding:10px;border-radius:11px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>cursor:pointer;border:1.5px solid transparent;transition:.12s;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-did{background:var(--green);color:#fff}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-did:hover{filter:brightness(1.06)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-skip{background:#fff;color:#a23440;border-color:#e7c2c7}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn-skip:hover{background:#fbe9eb}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.rate{margin-top:2px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.rate .rl{font-size:11.5px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin-bottom:6px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.pips{display:flex;gap:4px;flex-wrap:wrap}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.pip{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:30px;height:30px;border-radius:8px;border:1.5px solid var(--cream-2);background:#fff;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight:700;font-size:13px;cursor:pointer;color:var(--ink);transition:.1s;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.pip:hover{border-color:var(--marigold)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.pip.on{background:var(--maroon);color:#fff;border-color:var(--maroon)}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.pip.lock{cursor:not-allowed;opacity:.9}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.by{font-size:11.5px;color:var(--muted);font-style:italic}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.lockmsg{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:6px}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#loading{position:fixed;inset:0;background:var(--cream);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;z-index:50}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#loading .spin{width:34px;height:34px;border:4px solid var(--cream-2);border-top-color:var(--marigold);border-radius:50%;animation:sp 1s linear infinite}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>@keyframes sp{to{transform:rotate(360deg)}}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#loading p{color:var(--maroon);font-family:'Fraunces';font-weight:600}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>#confetti{position:fixed;inset:0;pointer-events:none;z-index:60}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>@media(max-width:540px){.scorerow{grid-template-columns:repeat(2,1fr)}}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1">&lt;div id="loading"&gt;&lt;div class="spin"&gt;&lt;/div&gt;&lt;p&gt;Setting up the wedding board…&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;canvas id="confetti"&gt;&lt;/canvas&gt;</p>
+<p class="p1">&lt;div class="wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="garland"&gt;✺ ❀ ✺ ❀ ✺ ❀ ✺ ❀ ✺&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Sanjeev's Road to Marriage&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="sub"&gt;14 days of husband training · Jun 3 – Jun 16, 2026 · rate him as a team&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="namebar"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input id="name" placeholder="Type your name to start rating…" autocomplete="off"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="who" id="who"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="panel"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="scorerow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="n" id="s-avg"&gt;—&lt;/div&gt;&lt;div class="l"&gt;Avg / 10&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="n" id="s-done"&gt;0&lt;/div&gt;&lt;div class="l"&gt;Completed&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="n" id="s-carry"&gt;0&lt;/div&gt;&lt;div class="l"&gt;Carried&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="stat"&gt;&lt;div class="n" id="s-rem"&gt;14&lt;/div&gt;&lt;div class="l"&gt;Remaining&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="meterhead"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="lbl"&gt;Marriage Readiness Meter&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;span class="v" id="verdict"&gt;Not started yet&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="meter"&gt;&lt;span id="meter"&gt;&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="resetbtn" onclick="resetBoard()"&gt;↺ Reset board&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="clear:both"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid" id="grid"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">// localStorage-backed storage (works on GitHub Pages / any static host; per-browser)</p>
+<p class="p1">window.storage = {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>get: async (k)=&gt;{ const v=localStorage.getItem(k); return v!==null?{key:k,value:v}:null; },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>set: async (k,v)=&gt;{ localStorage.setItem(k,v); return {key:k,value:v}; },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>delete: async (k)=&gt;{ localStorage.removeItem(k); return {key:k,deleted:true}; },</p>
+<p class="p1"><span class="Apple-converted-space">  </span>list: async ()=&gt;({keys:Object.keys(localStorage)})</p>
+<p class="p1">};</p>
+<p class="p2"><br></p>
+<p class="p1">const KEY='sanjeev-road-to-marriage-v1';</p>
+<p class="p1">const NAME_KEY='sanjeev-teammate-name';</p>
+<p class="p2"><br></p>
+<p class="p1">const M=[</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{t:'Operation Nickname', <span class="Apple-converted-space">    </span>d:'Give your fiancée an adorable nickname and reveal it to the team.'},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{t:'Words of Affirmation', <span class="Apple-converted-space">  </span>d:'Send her a sweet good-morning text before 9 AM.'},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{t:'Master Chef Trainee',<span class="Apple-converted-space">    </span>d:'Find out her favourite dish and admit if you can cook it.'},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{t:'Surprise Engineer',<span class="Apple-converted-space">      </span>d:'Plan one small surprise for the weekend.'},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{t:'Compliment Combo', <span class="Apple-converted-space">      </span>d:'Give her 3 genuine compliments today.'},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{t:'Picture Perfect',<span class="Apple-converted-space">        </span>d:'Take a cute selfie together and share it (with permission).'},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{t:'DJ Husband', <span class="Apple-converted-space">            </span>d:'Learn the lyrics to her favourite song.'},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{t:'Honeymoon HQ', <span class="Apple-converted-space">          </span>d:'Shortlist two honeymoon destinations.'},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{t:'The Gratitude List', <span class="Apple-converted-space">    </span>d:'Write down 5 things you love about her.'},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{t:'First Dance Rehearsal',<span class="Apple-converted-space">  </span>d:'Practise one first-dance move.'},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{t:'Gift Logistics', <span class="Apple-converted-space">        </span>d:'Plan or buy a small surprise gift.'},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{t:'Sorry in Advance', <span class="Apple-converted-space">      </span>d:'Master a sincere "I\'m sorry."'},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{t:'Vows Draft', <span class="Apple-converted-space">            </span>d:'Write the first line of your vows.'},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{t:'Grand Finale', <span class="Apple-converted-space">          </span>d:'Declare to the team you\'re 100% ready for married life!'}</p>
+<p class="p1">];</p>
+<p class="p2"><br></p>
+<p class="p1">let state={days:{}};</p>
+<p class="p1">let myName='';</p>
+<p class="p2"><br></p>
+<p class="p1">function ensureDays(){ for(let i=1;i&lt;=14;i++){ if(!state.days[i]) state.days[i]={status:null,rating:null,by:null}; } }</p>
+<p class="p1">function dayDate(i){ return new Date(2026,5,2+i); } // Day 1 = Jun 3 2026</p>
+<p class="p1">function fmt(d){ return d.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}); }</p>
+<p class="p1">function startOfDay(d){ return new Date(d.getFullYear(),d.getMonth(),d.getDate()); }</p>
+<p class="p1">function isLocked(i){ return startOfDay(dayDate(i)) &gt; startOfDay(new Date()); }</p>
+<p class="p2"><br></p>
+<p class="p1">async function load(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>try{ const r=await window.storage.get(KEY,true); if(r&amp;&amp;r.value) state=JSON.parse(r.value); }catch(e){}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>ensureDays();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>try{ const n=await window.storage.get(NAME_KEY,false); if(n&amp;&amp;n.value){ myName=n.value; } }catch(e){}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const ni=document.getElementById('name'); ni.value=myName; updateWho();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>render();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('loading').style.display='none';</p>
+<p class="p1">}</p>
+<p class="p1">async function save(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>try{ await window.storage.set(KEY,JSON.stringify(state),true); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>catch(e){ console.error('save failed',e); }</p>
+<p class="p1">}</p>
+<p class="p1">async function saveName(){ try{ await window.storage.set(NAME_KEY,myName,false); }catch(e){} }</p>
+<p class="p2"><br></p>
+<p class="p1">function carriedInto(i){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const out=[];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>for(let m=1;m&lt;i;m++){ if(state.days[m].status==='skipped') out.push(m); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>return out;</p>
+<p class="p1">}</p>
+<p class="p1">function needName(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(myName.trim()) return true;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const ni=document.getElementById('name'); ni.focus();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>ni.style.borderColor='#c0392b';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>setTimeout(()=&gt;ni.style.borderColor='',900);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>return false;</p>
+<p class="p1">}</p>
+<p class="p1">async function act(i,kind){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(isLocked(i)) return;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(!needName()) return;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const day=state.days[i];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(kind==='done'){ day.status='done'; if(day.rating===null) day.rating=8; day.by=myName; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>else { day.status='skipped'; day.rating=2; day.by=myName; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>await save(); render();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(i===14 &amp;&amp; kind==='done') confetti();</p>
+<p class="p1">}</p>
+<p class="p1">async function setRating(i,n){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const day=state.days[i];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(day.status!=='done') return;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>day.rating=n; await save(); render();</p>
+<p class="p1">}</p>
+<p class="p1">async function clearDay(i){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(isLocked(i)) return;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>state.days[i]={status:null,rating:null,by:null};</p>
+<p class="p1"><span class="Apple-converted-space">  </span>await save(); render();</p>
+<p class="p1">}</p>
+<p class="p1">function stats(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let done=0,carry=0,sum=0,cnt=0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>for(let i=1;i&lt;=14;i++){ const d=state.days[i];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(d.status==='done'){done++; sum+=d.rating; cnt++;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>else if(d.status==='skipped'){carry++; sum+=2; cnt++;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const avg=cnt?sum/cnt:0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>return {done,carry,rem:14-done-carry,avg,cnt};</p>
+<p class="p1">}</p>
+<p class="p1">function verdictFor(avg,cnt){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(!cnt) return ['Not started — fiancée is waiting 👀',0];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const pct=Math.round(avg*10);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(avg&lt;3) return ['🚨 Emergency Husband Bootcamp',pct];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(avg&lt;5) return ['🛠️ Needs Serious Training',pct];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(avg&lt;7) return ['🌱 Showing Some Promise',pct];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(avg&lt;9) return ['💍 Husband Material Loading…',pct];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>return ['🏆 Certified Husband Material',pct];</p>
+<p class="p1">}</p>
+<p class="p1">function render(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const s=stats();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('s-avg').textContent=s.cnt?s.avg.toFixed(1):'—';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('s-done').textContent=s.done;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('s-carry').textContent=s.carry;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('s-rem').textContent=s.rem;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const [v,pct]=verdictFor(s.avg,s.cnt);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('verdict').textContent=v;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>document.getElementById('meter').style.width=pct+'%';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const grid=document.getElementById('grid'); grid.innerHTML='';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>for(let i=1;i&lt;=14;i++){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const d=state.days[i], locked=isLocked(i), m=M[i-1];</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const card=document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>card.className='card '+(locked?'locked':(d.status||''));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let badge='';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(locked) badge='&lt;span class="badge l"&gt;🔒 Locked&lt;/span&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>else if(d.status==='done') badge='&lt;span class="badge d"&gt;✓ Did it&lt;/span&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>else if(d.status==='skipped') badge='&lt;span class="badge s"&gt;⏭ Skipped&lt;/span&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const carried=carriedInto(i);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let carryHtml='';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(carried.length){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>carryHtml='&lt;div class="carry"&gt;&lt;b&gt;Carried forward:&lt;/b&gt; '+carried.map(c=&gt;M[c-1].t).join(' · ')+'&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let body='';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(locked){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>body='&lt;div class="lockmsg"&gt;🔒 Unlocks '+fmt(dayDate(i))+'&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if(d.status==='skipped'){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>body='&lt;div class="rate"&gt;&lt;div class="rl"&gt;Rating (locked)&lt;/div&gt;&lt;div class="pips"&gt;'+pips(i,2,true)+'&lt;/div&gt;&lt;/div&gt;'</p>
+<p class="p1"><span class="Apple-converted-space">         </span>+'&lt;div class="by"&gt;⏭ Skipped by '+esc(d.by)+' — auto 2/10&lt;/div&gt;'</p>
+<p class="p1"><span class="Apple-converted-space">         </span>+'&lt;div class="actions"&gt;&lt;button class="btn-skip" onclick="clearDay('+i+')"&gt;Undo&lt;/button&gt;&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if(d.status==='done'){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>body='&lt;div class="rate"&gt;&lt;div class="rl"&gt;Rate this mission&lt;/div&gt;&lt;div class="pips"&gt;'+pips(i,d.rating,false)+'&lt;/div&gt;&lt;/div&gt;'</p>
+<p class="p1"><span class="Apple-converted-space">         </span>+'&lt;div class="by"&gt;✓ Done by '+esc(d.by)+'&lt;/div&gt;'</p>
+<p class="p1"><span class="Apple-converted-space">         </span>+'&lt;div class="actions"&gt;&lt;button class="btn-skip" onclick="clearDay('+i+')"&gt;Undo&lt;/button&gt;&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>body='&lt;div class="actions"&gt;'</p>
+<p class="p1"><span class="Apple-converted-space">         </span>+'&lt;button class="btn-did" onclick="act('+i+',\'done\')"&gt;Did it ✅&lt;/button&gt;'</p>
+<p class="p1"><span class="Apple-converted-space">         </span>+'&lt;button class="btn-skip" onclick="act('+i+',\'skip\')"&gt;Skip ⏭&lt;/button&gt;&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>card.innerHTML=</p>
+<p class="p1"><span class="Apple-converted-space">      </span>'&lt;div class="top"&gt;&lt;div&gt;&lt;div class="daytag"&gt;DAY '+i+'&lt;/div&gt;&lt;div class="date"&gt;'+fmt(dayDate(i))+'&lt;/div&gt;&lt;/div&gt;'+badge+'&lt;/div&gt;'</p>
+<p class="p1"><span class="Apple-converted-space">      </span>+'&lt;div class="title"&gt;'+esc(m.t)+'&lt;/div&gt;'</p>
+<p class="p1"><span class="Apple-converted-space">      </span>+'&lt;div class="task"&gt;'+esc(m.d)+'&lt;/div&gt;'</p>
+<p class="p1"><span class="Apple-converted-space">      </span>+carryHtml+body;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>grid.appendChild(card);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">}</p>
+<p class="p1">function pips(i,val,locked){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let h='';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>for(let n=1;n&lt;=10;n++){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h+='&lt;button class="pip'+(n&lt;=val?' on':'')+(locked?' lock':'')+'" '</p>
+<p class="p1"><span class="Apple-converted-space">      </span>+(locked?'':'onclick="setRating('+i+','+n+')"')+'&gt;'+n+'&lt;/button&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>return h;</p>
+<p class="p1">}</p>
+<p class="p1">function esc(s){ return (s||'').replace(/[&amp;&lt;&gt;"']/g,c=&gt;({'&amp;':'&amp;amp;','&lt;':'&amp;lt;','&gt;':'&amp;gt;','"':'&amp;quot;',"'":'&amp;#39;'}[c])); }</p>
+<p class="p1">function updateWho(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const w=document.getElementById('who');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>w.textContent=myName.trim()?('Rating as '+myName):'';</p>
+<p class="p1">}</p>
+<p class="p1">document.getElementById('name').addEventListener('input',e=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>myName=e.target.value; updateWho(); saveName();</p>
+<p class="p1">});</p>
+<p class="p1">async function resetBoard(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if(!confirm('Reset the whole board? This clears all ratings.')) return;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>state={days:{}}; ensureDays(); await save(); render();</p>
+<p class="p1">}</p>
+<p class="p1">function confetti(){</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const c=document.getElementById('confetti'), x=c.getContext('2d');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>c.width=innerWidth; c.height=innerHeight;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const cols=['#d4a017','#f4a300','#7a1f2b','#2e7d4f','#fff'];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const P=[];</p>
+<p class="p1"><span class="Apple-converted-space">  </span>for(let i=0;i&lt;160;i++) P.push({x:Math.random()*c.width,y:-20-Math.random()*c.height,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>s:5+Math.random()*7,vy:2+Math.random()*4,vx:-2+Math.random()*4,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>rot:Math.random()*6,vr:-.2+Math.random()*.4,col:cols[i%cols.length]});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>let t=0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>(function f(){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>x.clearRect(0,0,c.width,c.height); t++;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>P.forEach(p=&gt;{ p.x+=p.vx; p.y+=p.vy; p.rot+=p.vr;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>x.save(); x.translate(p.x,p.y); x.rotate(p.rot); x.fillStyle=p.col;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>x.fillRect(-p.s/2,-p.s/2,p.s,p.s*1.6); x.restore(); });</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if(t&lt;170) requestAnimationFrame(f); else x.clearRect(0,0,c.width,c.height);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>})();</p>
+<p class="p1">}</p>
+<p class="p1">load();</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
